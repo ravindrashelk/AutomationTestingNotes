@@ -1,0 +1,122 @@
+complex Data Type:- complex()
+------------------------
+Real + imaginary = Complex
+
+a    +    bj
+
+ex:-
+----
+>>> a = 2+3j
+>>> type(a)
+<class 'complex'>
+>>> 
+>>> b = -2-3j
+>>> type(b)
+<class 'complex'>
+>>> 
+>>> c = 3.8+8.9j
+>>> type(c)
+<class 'complex'>
+>>> 
+>>> d = -8.9-9.9j
+>>> type(d)
+<class 'complex'>
+>>> 
+
+
+
+In the real part if we use int value then we can specify that either by decimal,octal,binary or hexa form,
+But imaginary part should be specified only by using decimal form(float()).
+
+Ex:-
+>>> c = 0b1010+3j
+>>> c
+(10+3j)
+>>> d = 0o12+9j
+>>> d
+(10+9j)
+>>> 
+>>> e = 78+0b1010j
+SyntaxError: invalid syntax
+>>> 
+
+Use:-
+
+>>> a = 2+3j
+>>> b = 4+7j
+>>> a+b
+(6+10j)
+>>> 
+>>> a-b
+(-2-4j)
+>>> 
+>>> a = 2
+>>> a = 2+3j
+>>> b = 5+6j
+>>> a*b
+(-8+27j)
+>>> 
+
+
+
+4. Boolean:- bool()
+-------------
+
+We can use this data type to represent boolean values.
+The only allowed values for this data types are.
+True and False
+
+>>> a = True
+>>> type(a)
+<class 'bool'>
+
+>>> b = False
+>>> type(b)
+<class 'bool'>
+>>> 
+
+
+Note:- Internally Python represent True as 1 and False as 0.
+
+>>> True+ True
+2
+>>> True+False
+1
+>>> False+False
+0
+>>> 
+
+
+String :- str()
+----------------
+A string is a sequenece of keyboard char enclosed within single quotes or Double quotes.
+
+ex:-
+
+>>> a = ''
+>>> type(a)
+<class 'str'>
+>>> 
+\
+>>> b = ' '
+>>> type(b)
+<class 'str'>
+>>> 
+>>> c = ""
+>>> type(c)
+<class 'str'>
+>>> 
+>>> d = "12468900!@$&**((((*^%$@   VYUJJJMNNFF hgfdrthhnbh"
+>>> type(d)
+<class 'str'>
+
+
+Note:- Triple quotes to use for document string.
+
+def sum():
+	''' This function is for sumation purpose'''
+
+	a = 20
+	b = 30
+	c = a+b
+	return c

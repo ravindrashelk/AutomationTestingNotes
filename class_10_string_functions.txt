@@ -1,0 +1,58 @@
+
+
+12.split():- The split() method splits the string to the substring, using comman seprater.
+
+
+>>> first_name = "Abhiram Abhiman Abhishek Abhilash Abhilipsa"
+>>> first_name.split(' ')
+['Abhiram', 'Abhiman', 'Abhishek', 'Abhilash', 'Abhilipsa']
+
+if common separater is not avilabale use format()
+
+>>> first_name = "Abhiram Abhiram Abhishek Abhilash Abhilipsa"
+>>> first_name = "Abhiram Abhiman Abhishek Abhilash Abhilipsa"
+>>> first_name.split(' ')
+['Abhiram', 'Abhiman', 'Abhishek', 'Abhilash', 'Abhilipsa']
+
+
+13.join():- join the different string in a single.
+
+>>> li  = ['Krishna','Nayak']
+>>> ''.join(li)
+'KrishnaNayak'
+>>> ' '.join(li)
+'Krishna Nayak'
+>>> 
+
+>>> li  = ['Krishna','Nayak']
+>>> ''.join(li)
+'KrishnaNayak'
+>>> ' '.join(li)
+'Krishna Nayak'
+>>> 
+
+
+
+
+14.format():- The format method takes the passed arguments, format then add places them in the string where the placeholde {} are.
+
+>>> #Name = "Chandra Sekhar Nayak"
+>>> Name = "Chadr Sehar Naak"
+>>> Name = "Cha{}dr{} Se{}har Na{}ak"
+>>> Name.format('n','a','k','y')
+'Chandra Sekhar Nayak'
+>>> 
+
+>>> dob = "1{}/03{}1997"
+>>> dob.format('7','/')
+'17/03/1997'
+>>> 
+
+
+
+
+flat file------------- char/.txt/.json/.bson
+config file ------------ .exe cd /code/prod_cone/still_bayer/py_34.exe :- data
+log file ----------------- error
+
+Pycharm Download link:- https://www.jetbrains.com/pycharm/download/#section=windows

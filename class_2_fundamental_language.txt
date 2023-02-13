@@ -1,0 +1,81 @@
+Language Fundamental:-
+------------------
+
+Introduction:-
+-------------
+
+1.Python is a general purpose of high level programming laguage.
+	> There are 3 types of level of programming
+		>low level(dev:- slow, prod:- very fast)
+		>middle level(dev:- fast, prod:- slow)
+
+		>high level(oops(object oriented:- (Rule and regulation very hard)), pops(procedure oriented):- scrpting lang(Rule and regulation low))
+
+2.Python was developed by guido van rossam in 1989, while working at Nation Research institute at Netherland.(C++,Perl= abc)
+
+3.1991 feb 20th offically lunch , (python)
+
+4. Pythin is scripting lang.
+
+5.Python is very easy understand and user friendly, when we compare python with other languagaes.
+
+Ex:- Print :- 'Hye, How are you?'
+
+Java:-
+-----
+
+public class Hye
+{
+	p s v[String[]args]
+	{
+		SOP("Hye, How are you?")
+	}
+}
+
+C:-
+
+#include<stdio.h>
+void main()
+{
+	printf("Hye, How are you?")
+}
+
+Python:-
+
+print("Hye, How are you?")
+
+
+Where we can use python:-
+-----------------------
+
+1.Developing Web application.(search engine)
+2.Developing desktop application.
+3.Developing Database application.(Database server.application)
+4.Network Prpgramming.(Telecom)
+5.Automation Testing for all type of application.(everytype of application testing)
+6.Data Analysis application(makeing data analysis apps)
+7.Machine Learning(coomand/code machines)
+8.Deep learning(coomand/code machines)
+9.AI(Artificial Intelligence) application.(Football cameara,Robotics,srini,selfi camera,Tesla car)
+10.IOT(Internet Of Thing)
+11.Developing the Games
+
+Limitation Of python:-
+--------------------
+
+1.Mobile application and Mobile Realated Softwares
+2.Banking Application
+
+
+
+Features Of Python:-
+-------------------
+
+1.simple and easy to learn.
+2.Freeware and Open source.
+3.High level Programming Language.
+4.Platform Indepenedent(PVM).
+5.Poratbility.
+6.Dynamically Typed.
+7.Both Procedure oriented and Object Oriented.
+8.Extensive lib:- 65k+

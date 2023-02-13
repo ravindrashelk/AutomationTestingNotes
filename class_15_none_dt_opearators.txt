@@ -1,0 +1,179 @@
+#None Data type:-
+
+None means nothing or No value associated
+If the value is not available , then to handel such type of cases it's None.
+
+def m1():
+    a = 10
+print(m1())
+
+
+Escape Char:-
+-----------
+
+In string literal we can use escape char to associate a special meaning
+
+\n = new line 
+\t = Horizental tab
+\b = back space
+\' = single quote
+\" = double quote
+\\ = back slash
+
+
+                                Opeartor
+                                --------
+
+Operator is a symbol that perform certain opeartion
+
+1.Arithmetic
+2.Relational or Comparision
+3.Logical
+4.Bitwise
+5.Assignment
+6.Special:- Membership and Identity
+
+#Arthimetic
+
+'''Symbols :- +,-,*,/,%(modulo),//(floor divison) ,**(Exponent or power)'''
+
+a= 10
+b = 20
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(10/10)
+print(10%5) # reminder == modulo
+print(2**4) #power
+>>> 10//3(When we are required flaot value this time we will use floar division)
+
+#Relational operator
+
+'''symbols:- >,>=,<,<=,==,!=(Not equal)'''
+
+a = 10
+b = 20
+print(a>b) # False
+print(20>=20) #True
+print(a<b) # True
+print(77<=45)#False
+
+print(10 == 10) # True
+print(10 == 11) #False
+
+print(10!=10) # False
+print(10!=11) # True
+
+#Logical
+
+'''symbol:- and,or,not'''
+
+and :- If both arguments are True then only resuly is True.
+or :- if atleast one argument is True then result is True
+not :- Compliment(change the original Result)
+
+>>> a = 10
+>>> b = 20
+>>> c = 30
+>>> if a<b and a<c:
+	print('print the value')
+
+	
+print the value
+>>> if a>b and a<c: # first condition false
+	print('print the value')
+
+	
+>>> if a<b or a<c:# both True
+	print('print the value')
+
+	
+print the value
+>>> if a<b or a>c:# one first one True
+	print('print the value')
+
+	
+print the value
+>>> if a>b or a>c:# both false
+	print('print the value')
+
+	
+>>> not True
+False
+>>> not False
+
+
+# Assignment:-
+
+We can use assignment operator to assign value/data to the variable, with the help of = symbol.
+
+a = 10
+
+we can combine assigment operator with some other operators(arthimetic) to form compound assigment opeartor.
+
+x = x+10 ---> x+=10
+
+y = y-90 ---> y-=90
+
+z = z*10---> z*=10
+
+>>> 
+>>> x = 2
+>>> 
+>>> x = x+10
+>>> x
+12
+>>> 
+>>> y = 10
+>>> y+=10
+>>> y
+20
+
+
+#special:-
+
+1.Idenity Operator
+2.Membership Operator
+
+1.Idenity Operator:- 
+
+we can use identity operator for location/address comparison
+
+1.is
+2. is not
+
+>>> a = 10
+>>> b = 20
+>>> a is b
+False
+>>> b is a
+False
+>>> b = 10
+>>> a is b
+True
+>>> b is a
+True
+>>> a is not b
+False
+>>> 
+
+2.Membership opeartor:
+
+we acn use membership opearator to check whether the given object present in the collection or not(string,list,set,tuple,frozenset,dict)
+
+in 
+not in
+
+>>> a = [10,20,30,40]
+>>> 40 in a
+True
+>>> 50 in a
+False
+>>> 
+>>> s = 'Today is karnataka Diwas'
+>>> 'karnataka' in s
+True
+>>> 'Bihar' in s
+False
+>>> 

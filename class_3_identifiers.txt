@@ -1,0 +1,95 @@
+Chapter:- 2
+
+
+
+Identifiers:-
+-----------
+
+A name in python program is called identifier.
+It can be (class name,function name, module name and variable name).
+
+what is variable ?
+
+ans:- variable is a storage area, where we can store our data, it's also provide us data's data type.
+
+ex:-
+variable_name = data
+
+
+Rules to define identifiers in python:-
+---------------------------------------
+1.The only allowed charcters in python are:-
+	
+	> alphabet symbols(upper case and lower case).
+	> digits(0 to 9)
+	> Underscore symbol(_), No other special Char
+
+2.Identifiers should not start with the digits.
+
+Ex:-	
+	>>> cuttack1 = "silver city"
+>>> print(cuttack1)
+silver city
+>>> 1cuttack = "silver city"
+SyntaxError: invalid syntax
+>>> 
+
+
+3.Indentifiers are case sensitive, of course python language is case sensitive language.
+
+Ex:- 
+> >>> result = 100
+>>> Result = 90
+>>> 
+>>> RESULT
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    RESULT
+NameError: name 'RESULT' is not defined
+>>> result
+100
+>>> Result
+90
+>>> 
+
+4.There is no length limit for python identifiers,But not recommended to use too length identifiers.
+
+
+Casing:-
+-------
+
+Camel Casing:- Folder name,Class Name, Module Name
+------------
+
+Fisrt Char. of the word is always upper case, No space between the words and no special are used here.
+
+Ex:- 
+
+StateBankOfIndia123
+
+
+
+Snkae Casing:-File name,Variable name and function name
+-------------
+
+Upper case is not used in snake casing, and underscore(_) used in between the words.
+
+Ex:- 
+state_bank_of_india
+
+-------
+
+Python's Variable Types:-
+--------------------------
+
+x = 10 (Normal Variable)
+
+_x = 10 (procted variable)
+
+__x = 10 (Private Variable)
+
+___x = 10 (Magic Variable)
+
+	 
+
+

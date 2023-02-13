@@ -1,0 +1,132 @@
+How to use method or function in the data type?
+
+Using dot(.) method, we will use data type functions.
+
+syntax:-
+
+variable.function_name()
+
+
+Important Methods in string:-
+-----------------
+
+1.capitalize():- Capital the first char in the string.
+
+Ex:-
+>>> Name = "krishna"
+>>> Name.capitalize()
+'Krishna'
+
+
+2.upper():-Return the string in upper case.
+
+>>> Name = "krishna"
+>>> Name.upper()
+'KRISHNA'
+>>> 
+
+
+3.lower():- Return the string in lower case.
+
+>>> Name = "Krishna NAYAK"
+>>> Name.lower()
+'krishna nayak'
+
+
+4.swapcase():-lower case become upper acse and vice versa.
+
+>>> Name = "Krishna NAYAK"
+>>> Name.swapcase()
+'kRISHNA nayak'
+>>> 
+
+5.endswith(): Return true if the string ends with the specified values.
+
+>>> data = "Hi All, How are you?"
+>>> data.endswith('?')
+True
+>>> data.endswith('/')
+False
+
+6.startswith():- Return true if the string start with the specified values.
+
+>>> data.startswith("H")
+True
+>>> data.startswith('h')
+False
+>>>  
+
+
+Very very imp
+
+7.strip():- Removing the whitespaces from left and right side.
+
+>>> first_name = '    krishna Nayak    '
+>>> first_name.strip()
+
+8.replace():- Replace string with another string.
+
+>>> s = 'ji'
+>>> s.replace('j','h')
+'hi'
+>>> 
+>>> s = 'ji jerry'
+>>> s.replace('j','h')
+'hi herry'
+>>> s.replace('ji','hi')
+'hi jerry'
+>>> 
+
+
+9.count():- Return the number of times a specified values accurs in a string.
+
+>>> s = 'apple is best, i love apple'
+>>> len(s)
+27
+>>> s.count('p')
+4
+>>> s.count('i')
+2
+>>> s.count('e')
+4
+>>> s.count('best')
+1
+>>> s.count('apple')
+2
+>>> 
+
+10.find():-
+11.index():-
+
+
+2
+>>> #find
+>>> 
+>>> s = 'Harry is a magincian'
+>>> s.find('y')
+4
+>>> s.find('i')
+6
+>>> s.index('y')
+4
+>>> s.index('i')
+6
+>>> s.index('ia')
+17
+>>> s.index('in')
+14
+>>> 
+>>> s.find('b')
+-1
+>>> s.index('b')
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    s.index('b')
+ValueError: substring not found
+>>> 
+
+12.join
+13.split
+14.format
+
+

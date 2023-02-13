@@ -1,0 +1,98 @@
+Slicing of string:-
+-----------------
+
+Slice means a piece.
+
+[] operator is called slice operator, Which can be used to retrive parts of string.
+
+Python Follows zero based index.
+The index can be either +ve or -ve.
+
++ve :- left to right
+-ve :- right to left
+
+
+Formual :-
+
+variable_name[start:end+1:step]
+
++ve index:-
+---------
+
+
+ex:- 
+
+>>> A = "Scodeen"
+>>> #Sco
+>>> A[0:3:1]
+'Sco'
+>>> A[0:3]
+'Sco'
+>>> A[2:6]
+'odee'
+>>> A[2:6:1]
+'odee'
+>>> A[2:6]
+'odee'
+>>> A[1:6:2]
+'cde'
+>>> A[0:7:3]
+'Sdn'
+>>> A[0::3]
+'Sdn'
+>>> 
+
+-ve:-
+
+>>> A = "Scodeen"
+>>> A[-5:-1]
+'odee'
+>>> A[-7::2]
+'Soen' 
+>>> 
+
+------------------------------------------------------
+HW :- 
+
+Name = "Rahul Dravid"
+Dob = "19/10/2022"
+car_no = "KA-52-AG-0108"
+
+Name(First_Char first + and sure name last) +DOB(Year)+ car_no(RTO No)
+
+out:- Rd202252
+--------------------------------------------------------
+
+
+Mathmetical Implimatation in string:-
+---------------------
+
+Addition(+)
+Sub(-)
+mul(*)
+div(/)
+
+Note:- Only addition and multiplication is available in python.
+
+Add:-
+
+>>> st_1= 'Rahul'
+>>> st_2 = 'Dravid'
+>>> 
+>>> st_1+st_2
+'RahulDravid'
+>>> 
+
+String Methods:
+---------
+dir() :- fetch methods
+
+>>> s = "Scohool"
+>>> dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> 
+
+
+Note:- __ is private method, no need to impliment. Fouce on (capitalize-- zfill)
+
+Note:- https://www.w3schools.com/python/python_ref_string.asp

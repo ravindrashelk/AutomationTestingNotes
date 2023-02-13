@@ -1,0 +1,142 @@
+Integer:-int()
+--------
+
+We can use int data type to represent whole number(Integral Values)
+
+type():- check the data type of a variable.
+
+Ex:-
+
+>>> a = -10
+>>> type(a)
+<class 'int'>
+>>> 
+>>> b = 99
+>>> type(b)
+<class 'int'>
+>>> 
+
+
+Other Formats:-
+--------------
+
+Decimal Form
+Binary  Form
+Octal   Form
+Hexal   Form
+
+Decimal Form:-(base-10)
+---------
+
+It is the default number system in python. (float)
+The allowed digits are :- 0 to 9
+
+2.Binary Form:- (Base-2)
+---------
+
+The allowed digits are :- 0 and 1
+ conver int to binary, we will use :- bin()
+Literal value should be prefixed with '0b'
+
+ >>> a = 10
+>>> bin(a)
+'0b1010'
+>>> b = 11
+>>> bin(b)
+'0b1011'
+>>> c = 12
+>>> bin(c)
+'0b1100'
+>>> 
+
+
+ Note:- After converted  int to bin, converted data type is string.
+
+3.Octal Form:-(Base-8)
+-------------
+
+The allowed digits are :- 0 to 7
+ conver int to octal, we will use :- oct()
+Literal value should be prefixed with '0o'
+
+
+ >>> a = 10
+>>> oct(a)
+'0o12'
+>>> b = 11
+>>> oct(b)
+'0o13'
+>>> 
+
+ Note:- After convertinf int to oct, converted data type is string.
+
+ 4.Hexal Form(Base-16)
+ ----------
+
+ The allowed digits are (0-9 and a-f)
+conver int to gexal, we will use :- hex()
+ Literal value should be prefixed with '0x'
+
+ ex:-
+ >>> a = 10
+>>> hex(a)
+'0xa'
+>>> b = 180
+>>> hex(b)
+'0xb4'
+>>> 
+
+
+
+Float:- float()
+--------------
+
+We can use float data type to represent floating point values(decimal Values).
+
+ex:-
+
+>>> a = 1.0
+>>> type(a)
+<class 'float'>
+>>> 
+>>> b = 78.896
+>>> type(b)
+<class 'float'>
+>>> 
+>>> c = -9.0
+>>> type(c)
+<class 'float'>
+>>> 
+>>> d = -99.87
+>>> type(d)
+<class 'float'>
+>>> 
+
+
+Interger
+-------
+
+>>> a = 98.5678
+>>> int(a)
+98
+>>> 
+
+
+binary,octal,hexal
+-------
+
+we can not convert.(TypeError: 'float' object cannot be interpreted as an integer)
+
+>>> a = 10.10
+>>> type(a)
+<class 'float'>
+>>> bin(a)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    bin(a)
+TypeError: 'float' object cannot be interpreted as an integer
+>>> 
+
+
+
+ALL Mathmetical activity, we will impliment int and float.

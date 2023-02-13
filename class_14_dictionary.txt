@@ -1,0 +1,129 @@
+#bytes():- bytes is a collection, it's contain 0-255 limit of values, if we put above of 255 then we will get the error, For creating bytes we required type casting method. it's a immutable data type 
+
+ex:- 
+>>> #bytes
+>>> li = [12,56,78,45]
+>>> by = bytes(li)
+>>> by
+b'\x0c8N-'
+>>> for i in by:
+	print(i)
+
+	
+12
+56
+78
+45
+>>> li = [12,56,78,45,255]
+>>> by = bytes(li)
+>>> by
+b'\x0c8N-\xff'
+>>> 
+>>> li = [12,56,78,45,255,256]
+>>> by = bytes(li)
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    by = bytes(li)
+ValueError: bytes must be in range(0, 256)
+
+
+#bytearray():- same as byte, but it's mutable
+
+Note:- When we complete the for the loop, then we start range data type.
+
+
+
+# Dictionary():-
+
+if we want to represent a group of values as key-value pairs then we should go for dict data type.
+
+
+ex:- {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+
+Duplicate keys are not allowed but values can be duplicate, If we are trying to insert an 
+entry duplicate key then we will get old key is replace new key. Dictionary is a mutable data type.
+
+>>> di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+>>> type(di)
+<class 'dict'>
+>>> 
+---------
+>>> di['name']
+'mahesh'
+>>> di['name'] = 'Ranjan'
+>>> di
+{'name': 'Ranjan', 'age': 24, 'salary': 500000, 'address': 'mahesh'}
+
+>>> dir(di)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> 
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+
+#clear():- delete all the element from dictionary.
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+di.clear()
+print(di) # op{}
+
+#copy :- Return a copy in another variable
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+di_1 = di.copy()
+print(di_1) # {'name': 'mahesh', 'age': 24, 'salary': 500000, 'address': 'mahesh'}
+
+
+#fromkeys():- Return a dict with a specified key and value, and here value is same
+
+li = ['Kiran','Sonal','Krishna','Javed']
+marks = 80
+
+z = dict.fromkeys(li,marks)
+print(z) # {'Kiran': 80, 'Sonal': 80, 'Krishna': 80, 'Javed': 80}
+
+# get():- Return the value of specified key,
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+print(di.get('salary')) # 500000
+
+#items():- Return a list of tuple containing dictionary values.
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+print(di.items()) # dict_items([('name', 'mahesh'), ('age', 24), ('salary', 500000), ('address', 'mahesh')])
+
+#keys():- Return a list of keys.
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+print(di.keys()) # dict_keys(['name', 'age', 'salary', 'address'])
+
+#Values():- Return a list of values
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+print(di.values()) # dict_values(['mahesh', 24, 500000, 'mahesh'])
+
+#pop():- Remove the element with the specified key.
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+di.pop('age')
+print(di) # {'name': 'mahesh', 'salary': 500000, 'address': 'mahesh'}
+
+#popitem():- Remove the last key and value from the dictionary
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+di.popitem()
+print(di) # {'name': 'mahesh', 'age': 24, 'salary': 500000}
+
+# setdefault():- Return the value of specofied key, If the key doesnot exits, insert key with
+#specified values
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+di.setdefault('ph_no',9989786686)
+print(di) # {'name': 'mahesh', 'age': 24, 'salary': 500000, 'address': 'mahesh', 'ph_no': 9989786686}
+
+#update :-
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+new_di = {'ph_no': 986775,'hike_salary':250000,'company':'IBM'}
+
+di.update(new_di)
+print(di) # {'name': 'mahesh', 'age': 24, 'salary': 500000, 'address': 'mahesh', 'ph_no': 986775, 'hike_salary': 250000, 'company': 'IBM'}
+
+
+
+

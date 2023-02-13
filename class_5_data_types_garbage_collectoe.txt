@@ -1,0 +1,63 @@
+Chapter:-3
+
+                                           Data Types:-
+
+
+Data Type represent the type of data present inside a variable
+In Python we are not required to specify the type explicily, Because python is a dynamically typed laguage.
+
+variable = data
+
+There are in 14 types od data avialable in Python(Inbuit Data types)
+
+Name         Use in Python
+----         
+1.Integer :- int()
+2.Float   :- float()
+3.Complex :- complex()
+4.Boolean :- bool()
+5.String   :- str()
+6.List     :- list()
+7.Tuple   :- tuple()
+8.Set     :- set()
+9.Frozenset :- frozensset()
+10.Bytes     :- bytes()
+11.Bytearray  :- bytearray()
+12.Range      :- range()
+13.Dictionary  :- dict()
+14.None        :- None
+
+
+Variable and Data:-
+-----------
+Data is fixed in python, and have a specific location. We create varibale and store data in varibale. 
+So that variable indicate data's location , so that data's location and variable's loaction is same.
+
+Ex:-
+>>> id(10)
+2747102816848
+>>> a = 10
+>>> id(a)
+2747102816848
+>>> a = 20
+>>> id(a)
+2747102817168
+>>> 
+
+
+Garbage Collection:-
+------------------
+In Old lanuages like C++,Java programmer is responsible for unnessary object destruction. 
+Usally programmer taking very much time while destructing object and mine while it's creating issues,
+ If any neglectance , total memory can be filled with useless object which creates meomory problems.
+
+In python, We have some assitance which is always running in the backgound to destroy useless object. 
+Because this assitance the chance of falling python program with memory problems is very less.
+ This assiatant is nothing but Garbage Collector.
+
+It's always delets old same variable objects,Hence the main object of Garbage collector is to destroy useless objects.
+
+
+
+
+

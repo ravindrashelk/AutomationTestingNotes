@@ -1,0 +1,146 @@
+Anonymous Function or Lambda Function:-
+-------------------------------------
+Sometime we can declare a function without any name, such type of nameless function are called Anonymous Function or Lambda Function.
+
+
+Normal Function:-
+--------------
+def func_name(a,b):
+	body
+	return value
+
+func_name(10,20)
+
+
+Lambda Function:--
+---------------
+syntax
+
+var = lambda argument/parameter list:body/expression
+
+Normal:-
+def add(a,b):
+    c = a+b
+    return c
+
+print(add(10,20))
+
+Lambda
+sum = lambda a,b:a+b
+print(sum(10,20))
+
+def add(a,b):
+    c = a+b
+    return c
+print('Normal func:-',add(10,20))
+
+c =  lambda a,b:a+b
+print('lambda func:-',c(20,40))
+
+
+#WAP using lambda find out the squre of the number
+
+squre = lambda n:n*n
+print(squre(5))
+
+#WAP using lambda add two string
+
+s = lambda a,b:a+b
+print(s('Krishna','Jadev'))
+
+Quest :- WAP using lambda biggest value between two number
+
+biggest = lambda a,b:a if a>b else b
+print(biggest(25,21))
+
+li = [10,20,30,40]
+
+a = 30
+for i in container:
+	a = a+i = 10+20
+
+i for i in li
+
+Notes:-
+
+1.Lambda Function internally returns expression value and we are not not required to write return statement.
+
+2.Sometime we can pass function as argument to another function,In such case lambda function the best choice(Plz take a note).
+
+
+>> Some inbuild func are very commonly use in lambda for the help. --> filter(),map(),reduce()
+
+
+filter Function:-
+---------------
+
+We can use filter function to filter  values form the given container(List,set, etc) base on some condition.
+
+syntax:-
+
+var = filter(func,container)
+
+where function argument is responsible to perform condition check.
+
+ex:-
+with lambda
+li = [10,12,20,24,30,36,40,48]
+var = list(filter(lambda x:x%5==0,li))
+print(var)
+op:- [10, 20, 30, 40]
+
+without lambda 
+:-
+
+li = [10,12,20,24,30,36,40,48]
+
+
+
+
+def div_5(x):
+    if x%5==0:
+        return True
+    else:
+        return False
+
+var = list(filter(div_5,li))
+print(var)
+op:- [10, 20, 30, 40]
+
+
+2.map Function:-
+
+For everyelement present in the given sequenece apply some functionality and generate new elements with required modification. For this requirement we should go for map() function.
+
+synx:-
+
+var = map(func,container)
+
+ex:-
+
+li = [6,12,18,24]
+
+var = list(map(lambda x:x+5,li))
+print(var)
+
+op:- [11, 17, 23, 29]
+
+
+reduce Function:-
+reduce function reduce sequence of element into a single element by applying specific function
+
+syntx:-
+#reduce(function,container)
+
+Note:- reduce function present in functools module
+
+from functools import reduce
+
+
+
+l = [10000,12000,45000,67000]
+
+var = reduce(lambda a,b:a+b,l)
+print(var)
+
+

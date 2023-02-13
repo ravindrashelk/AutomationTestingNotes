@@ -1,0 +1,113 @@
+2. Iterative Statement :- 
+---------------------------------------
+if we want to execute a group of statement in multiple times then we should go for looping statement
+
+There are two types of loop in python
+
+1.for
+2.while
+
+
+for:- If we want to excute some action for every element present in some sequence like container[list,tuple,set,fzset,string etc] then we should go for for loops.
+
+
+syntax:
+
+for var in container:
+	statement
+
+
+ex:-
+
+for i in data:
+    result = i+100
+    print(result)
+
+where sequence can be string or any collection.
+Body will be executed for every element present in the sequence.
+
+ex:-
+li = [10,20,30,40,50]
+
+for i in li:
+    result = i*2
+    print(result)
+
+
+Range Data Type:- It's sequence of number
+
+for i in range(1,11):
+    print(i)
+
+ print 1 to 10
+
+
+for i in range(1,11,2):
+    print(i)
+
+for i in range(2,11,2):
+    print(i)
+
+        Pattern Programs
+        ----------------
+
+
+1. Write a patter of start lenth(*) and height(*)
+
+*****
+*****
+*****
+*****
+*****
+
+n = int(input("Enter your number:-"))
+
+for i in range(1,n+1):
+    print('*'*n)
+
+
+2. Write (*) retriange 
+
+*
+**
+***
+****
+*****
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print('*',end= ' ')
+    print()
+
+
+3. Reverse of question(2).
+
+*****
+****
+***
+**
+*
+
+for i in range(1,n+1):
+    for j in range(1,n+2-i): # 5,4,3,2,1
+        print('*',end=' ')
+    print()
+
+
+Homework:-(deal woth * and space )
+---------
+
+*********
+ *******
+  *****
+   ***
+    *
+
+
+(Mein ea question nehi diya hai,plz upar ka check karo)
+**********
+*******
+*****
+***
+*
+

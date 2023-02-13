@@ -1,0 +1,121 @@
+Types Of arguments or parameters
+--------------------------------
+
+def func(a,b): ----- formal arg/parameter
+	body
+
+
+func(10,20) ---- actual arg/argumets
+
+a,b are formal arguments are 10.20 are actual argumets
+
+There are 4 types of arguments are avialable.
+
+
+1.Positional Arguments
+2.Keyword Arguments
+3.Default Arguments
+4.Variable length Arguments
+
+1.Positional Arguments:-
+
+These are the arguments passed to function in correct positional order
+
+def add(a,b):
+    result = a+b
+    return result
+
+print(add(40,10))
+
+The number of arguments and postion of arguments must be matched. If we change the order we will get other result.
+
+if the number arguments not matched then we will get error.
+
+
+Keyword Arguments:-
+------------------
+
+We can pass arguments values by keyword that is parameter name.
+
+def wish(name,msg):
+    print('Hello',name,msg)
+
+#wish('Good morning','Krishna')
+wish(msg = 'Good morning',name ='Krishna')
+
+ans:- Hello Krishna Good morning
+
+
+
+
+>> We can use positional and Keyword simultaneously but we need to use first positional then keyword.
+def wish(name,msg,div):
+    print('Hello',name,msg)
+
+
+wish(msg = 'Good morning',name ='Krishna','great')
+
+
+
+ans:- SyntaxError: positional argument follows keyword argument
+
+Positiona+Keyword
+
+def wish(name,msg,div):
+    print('Hello',name,msg,div)
+
+
+wish('krishna',msg = 'Good morning',div ='well')
+
+ans:- Hello krishna Good morning well
+
+
+3. Default arguments:-
+---------------------
+
+Sometimes we can provide default values for our positional arguments.
+
+def wish(name='Guest',msg = 'Good evening'):
+    print("Hello",name,"Plz welcome",msg)
+
+wish("Patel Uncle")
+wish("Gaiwad Uncle")
+wish()
+
+
+ans:-
+
+Hello Patel Uncle Plz welcome Good evening
+Hello Gaiwad Uncle Plz welcome Good evening
+Hello Guest Plz welcome Good evening
+
+
+4. Variable length arguamnets:
+
+>variable length
+> keyword variable length
+
+Sometime we can pass variable length of arguments to our function, such type of arguments are called variable length of arguments
+
+we can declare a variable length of arguments with the help (*) symbol.
+
+ex:-
+
+def func_name(*para):
+	-----\
+	-----\
+
+we can call this function by passing any number of arguments including zero number.
+Note:- Internally all these values represented in the form of tuple.
+
+ex:-
+def cal(*num):
+    total = 0
+    mul = 1
+    for i in num:
+        total = total+i
+        mul = mul*i
+    print('sum',total)
+    print('mul',mul)
+
+cal(1,2,3,4,5,6,7,90)

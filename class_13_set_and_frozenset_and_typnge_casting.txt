@@ -1,0 +1,124 @@
+Set:-
+
+If we want to represent a group of values without duplicates, where order is not preserved or imp, then we should go for set data type.
+
+1. Insertion order is not preserved.
+2. Duplicates are not allowed.
+3. Hetrogeneous object allowed.
+4. Index concept is not applicable
+5. It is mutable collection.
+6. It's growable in nature.
+
+add', 'clear', 'copy', 'difference', '#difference_update', 'discard', 
+'intersection', '#intersection_update', '#isdisjoint', '#issubset', '#issuperset', 'pop', 'remove', 
+'#symmetric_difference', '#symmetric_difference_update', 'union', 'update']
+note: those who mark as # are not important
+se = {34,87,56,46,78,34,34,87,87,90,90,90,65,56,56,34}
+
+# add:-  Add an element to the set.
+se = {34,87,56,46,78,34}
+se.add(123)
+print(se)
+# op:- {34, 87, 56, 78, 123, 46}
+
+#clear() :- Remove all the element from the set.
+se = {34,87,56,46,78,34}
+se.clear()
+print(se)
+
+#op:- set()
+
+# copy():- Return a copy of the set.
+
+a = {34,87,56,46,78,34}
+b = a.copy()
+print('b data:-',b)
+
+# difference():- Return  a set that contain the item that only only exits in the first_set
+                # not in second
+
+a = {1,2,3,7,8}
+b = {4,5,6,7,8}
+print(a.difference(b)) # op :- {1, 2, 3}
+print(b.difference(a)) # op :- {4, 5, 6}
+
+# intersection :- Common element in the set.
+
+a = {1,2,3,7,8}
+b = {4,5,6,7,8}
+
+print(b.intersection(a)) # op:- {8, 7}
+
+# discard() :- Remove the specified item.
+a = {1,2,3,7,8}
+a.discard(3)
+print(a) # {1, 2, 7, 8}
+
+# remove() :- Remove the specified item.
+a = {1,2,3,7,8}
+a.remove(3)
+print(a) # {1, 2, 7, 8}
+
+#pop():- delete any element of the set(Randomly)
+a = {1,2,3,7,8}
+a.pop()
+print(a) # {2, 3, 7, 8}
+
+#union :- Return a set containing the union of the set.
+
+a = {1,2,3,4,5,6}
+b = {5,6,7,8,9,10}
+
+print(a.union(b)) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+#update
+
+a = {12,3,78,98,56}
+b = {10,11,97,22}
+a.update(b)
+print(a) # {97, 98, 3, 10, 11, 12, 78, 22, 56}
+
+
+
+Type Casting:-
+-------------
+
+We can convert one type value to another type , this conversion is called type casting or type coresion.
+
+list = [1,2,3,1,2,3]
+
+>>> list = [1,2,3,1,2,3]
+>>> type(list)
+<class 'list'>
+>>> 
+>>> tu = (6,7,8,9)
+>>> type(tu)
+<class 'tuple'>
+>>> 
+>>> li_1 = tuple(list)
+>>> li_1
+(1, 2, 3, 1, 2, 3)
+>>> type(li_1)
+<class 'tuple'>
+
+
+>>> a = [1,2,3]
+>>> s = set(a)
+>>> s
+{1, 2, 3}
+>>> type(s)
+<class 'set'>
+>>> 
+
+
+Frozenset():-
+-----------
+It is exactly same as set except that it is immutable, and we create a frozenset the help of typecasting.
+
+>>> a = [1,2,3,4,5,5,5,6]
+>>> fz = frozenset(a)
+>>> fz
+frozenset({1, 2, 3, 4, 5, 6})
+>>> type(fz)
+<class 'frozenset'>
+>>> 

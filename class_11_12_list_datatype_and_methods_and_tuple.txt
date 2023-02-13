@@ -1,0 +1,125 @@
+list:- 
+
+[45,89.90,7+9j,True,'scodeen',[12],(67,89)] = list
+
+
+
+
+variable = ['Chandra','Sekhar','Nayak',25,1997,'Bhubaneswar',1997]
+
+If we want to represent a group of values in a single entity then we represent this group as a list,
+ where insertion order is preserved and duplicate value also acceptable and every element seprate with 
+each through comma(,) it's enclosed with in squre bracket. It'a mutable data type.
+
+1.Hetrogenous object allowed.
+2.Duplicate elements allowed.
+3.Insertion order is preserved.
+4.Growable in nature.
+
+>>> li = [12,24,36]
+>>> dir(li)
+[ 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+
+li = [12,56,89]
+#print(type(li))
+
+# append:- add element in list last postion.
+li = [12,56,89]
+li.append(60)
+print(li)
+# output:- [12, 56, 89, 60]
+
+# insert :- Insert an element of specified postion.
+li = [12,56,89]
+li.insert(0,'scodeen')
+print(li)
+
+#  output:- ['scodeen', 12, 56, 89]
+
+#clear:- delete all the element in list and provide a empty list.
+
+li = [56,89,78,90]
+li.clear()
+print(li)
+
+#output :- []
+
+#pop():- Delete last element of the list.
+
+li = [12,34,67,89,70]
+print(li.pop())
+print(li)
+
+# remove():-
+li = [12,34,67,89,70]
+li.remove(67)
+print(li)
+
+# output :- [12, 34, 89, 70]
+
+#extend():- merge two list.
+
+tenth_sec_a = ["Abhishek","Abhiram","Abhiman"]
+tenth_sec_b = ["Akash","Akhankya","Alpana"]
+
+tenth_sec_a.extend(tenth_sec_b)
+print(tenth_sec_a)
+
+#output:- ["Abhishek","Abhiram","Abhiman","Akash","Akhankya","Alpana"]
+
+#copy():- copy the data one variable to another variable.
+
+a = [89,90]
+b = a.copy()
+print(b)
+print(id(a))
+print(id(b))
+
+Class:-12
+---------
+
+#count:- A single element used a list, count this perticular elelment.
+
+li = [10,20,30,40,50,60,60,20,20,10,10,40,20,20]
+print(len(li))
+print(li.count(50))
+
+#index:- Return the index of first occurance starts and end index are not nessary parameter.
+
+li = [10,20,30,40,50,60,60,20,20,10,10,40,20,20]
+print(li.index(20))
+
+#sort():- convert accending order
+
+li = [344,87,567,123,90,78,56,34,987656]
+li.sort() # accending
+li.sort(reverse = True) # decending
+print(li)
+
+#reverse:- Reverse the list.
+li = [67,90,56,878,545,8786,45]
+li.reverse()
+print(li)
+
+link :- https://www.w3resource.com/python-exercises/list/
+
+
+
+Tuple:- Tuple is a immutable data type, It's same as list but enclosed  in Paranthesis '()', so that we can not modifie or change or update list elements.
+
+t = (10,20,30)
+type(t)
+<class,'tuple'>
+
+
+
+
+
+
+
+
+
+
+
+

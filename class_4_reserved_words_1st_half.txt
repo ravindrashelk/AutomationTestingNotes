@@ -2,9 +2,7 @@
 Reserved Words(keyword):- 
 ---------------
 
-In python some words are reserved to represent some meaning of functionality. Such type of words are called Reserved words.
 
-Before P3.6 :- 33 reserved words
 After P3.6 :- 35 Reserved words
 
 New Reserved words:- async and await.
